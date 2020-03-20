@@ -10,7 +10,14 @@ pub struct Ast {
 }
 
 impl Ast {
-    pub fn parse_tokens(tokens: Vec<Token>) -> Ast {
-        // @todo -> implement token parsing
+    pub fn parse_tokens(_tokens: Vec<Token>) -> Ast {
+        let root: Node = Node {
+            name: String::from(""),
+            children: Vec::new(),
+        };
+
+        Ast {
+            root
+        }
     }
 }

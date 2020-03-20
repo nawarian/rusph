@@ -111,11 +111,8 @@ impl<'a> Lexer<'a> {
 
 #[cfg(test)]
 mod test {
-    use crate::lexer::Lexer;
-    use crate::tokens::Token;
-    use crate::lexer::tokens::Token;
-    use crate::parser::lexer::tokens::Token;
     use crate::parser::lexer::Lexer;
+    use crate::parser::lexer::tokens::Token;
 
     #[test]
     pub fn lex_assignment() {
